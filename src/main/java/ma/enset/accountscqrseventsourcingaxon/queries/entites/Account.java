@@ -6,11 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import ma.enset.accountscqrseventsourcingaxon.commonapi.enums.AccountStatus;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.time.Instant;
-import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -21,8 +18,9 @@ public class Account {
     private Instant CreatedAt;
     private double balance;
     private String currency;
+    @Enumerated(EnumType.STRING)
     private AccountStatus status;
     @OneToMany(mappedBy = "account")
-    private List<AccountTransaction> transactions;
+    private List<Operation> transactions;
 
 }

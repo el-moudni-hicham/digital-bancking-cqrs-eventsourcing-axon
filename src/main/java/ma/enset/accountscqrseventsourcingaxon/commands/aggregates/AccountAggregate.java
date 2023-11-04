@@ -16,6 +16,9 @@ import org.axonframework.modelling.command.AggregateIdentifier;
 import org.axonframework.modelling.command.AggregateLifecycle;
 import org.axonframework.spring.stereotype.Aggregate;
 
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+
 // Objet Aggregate represente l'etat actuel de l'application
 @Aggregate
 public class AccountAggregate {
@@ -50,6 +53,7 @@ public class AccountAggregate {
     @CommandHandler
     public void handler(DebitAccountCommand command){
         if (command.getAmount() < 0) throw new NegativeAmountException("Negative Amount");
+        if (command.getAmount() > this.balance) throw new InsufficientBalanceException("Insufficient Balance");
         AggregateLifecycle.apply(new AccountDebitedEvent(
                 command.getId(),
                 command.getAmount(),
@@ -58,13 +62,12 @@ public class AccountAggregate {
     }
     @EventSourcingHandler
     public void on(AccountDebitedEvent event){
-        this.balance += event.getAmount();
+        this.balance -= event.getAmount();
     }
 
     @CommandHandler
     public void handler(CreditAccountCommand command){
         if (command.getAmount() < 0) throw new NegativeAmountException("Negative Amount");
-        if (command.getAmount() > this.balance) throw new InsufficientBalanceException("Insufficient Balance");
         AggregateLifecycle.apply(new AccountCreditedEvent(
                 command.getId(),
                 command.getAmount(),
@@ -73,6 +76,6 @@ public class AccountAggregate {
     }
     @EventSourcingHandler
     public void on(AccountCreditedEvent event){
-        this.balance -= event.getAmount();
+        this.balance += event.getAmount();
     }
 }

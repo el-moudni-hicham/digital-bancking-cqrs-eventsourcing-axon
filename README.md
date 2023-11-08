@@ -10,14 +10,15 @@ and tracking account balances.
 
 ## Table of Contents
 
-- [Documentation](#documentation)
+- [Key Concepts](#key-concepts)
 - [Prerequisites](#prerequisites)
 - [Project Structure](#project-structure)
 - [Conclusion](#conclusion)
 
 
 
-## Documentation
+## Key Concepts
+
 - Command Query Responsibility Segregation (CQRS) and Event Sourcing (ES) are two architectural patterns that are often used together. 
 
   - CQRS : separates the handling of commands (which update the system state) from the handling of queries (which read the system state). 

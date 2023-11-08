@@ -10,9 +10,23 @@ and tracking account balances.
 
 ## Table of Contents
 
+- [Documentation](#documentation)
 - [Prerequisites](#prerequisites)
 - [Project Structure](#project-structure)
 - [Conclusion](#conclusion)
+
+
+
+## Documentation
+- Command Query Responsibility Segregation (CQRS) and Event Sourcing (ES) are two architectural patterns that are often used together. 
+
+  - CQRS : separates the handling of commands (which update the system state) from the handling of queries (which read the system state). 
+
+  - ES  : is a way of storing data as a sequence of events, rather than as a snapshot of the current state.
+
+- There are a number of benefits to using CQRS and ES together. These benefits include:
+
+    * Improved performance, Increased scalability, Improved auditability, Simplified development
 
 ## Prerequisites
 

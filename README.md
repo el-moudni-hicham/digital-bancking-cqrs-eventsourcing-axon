@@ -1,4 +1,4 @@
-# Bank Account Management Application with Axon Framework (CQRS, Event Sourcing Patterns) and Spring Boot
+# Bank Account Management Application with Axon Framework (CQRS, Event Sourcing Patterns)
 
 ```
 This project aims to develop a comprehensive bank account management application that adheres to

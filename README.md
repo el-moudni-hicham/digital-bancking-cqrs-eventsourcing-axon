@@ -13,7 +13,7 @@ and tracking account balances.
 - [Key Concepts](#key-concepts)
 - [Prerequisites](#prerequisites)
 - [Project Structure](#project-structure)
-- [Conclusion](#conclusion)
+- [Tests](#tests)
 
 
 
@@ -21,13 +21,13 @@ and tracking account balances.
 
 - Command Query Responsibility Segregation (CQRS) and Event Sourcing (ES) are two architectural patterns that are often used together. 
 
-  - CQRS : separates the handling of commands (which update the system state) from the handling of queries (which read the system state). 
+  - **CQRS** : separates the handling of commands (which update the system state) from the handling of queries (which read the system state). 
 
-  - ES  : is a way of storing data as a sequence of events, rather than as a snapshot of the current state.
+  - **ES**  : is a way of storing data as a sequence of events, rather than as a snapshot of the current state.
 
 - There are a number of benefits to using CQRS and ES together. These benefits include:
 
-    * Improved performance, Increased scalability, Improved auditability, Simplified development
+  - Improved performance, Increased scalability, Improved auditability, Simplified development
 
 ## Prerequisites
 
@@ -102,7 +102,42 @@ and tracking account balances.
 │   │   │                           AccountEventHandlerService.java
 ````
 
+## Tests
 
-## Conclusion
+Create an application that allows you to manage bank accounts.  
 
-The Bank Account Management Application with CQRS, Event Sourcing, Axon, and Spring Boot demonstrates the practical implementation of modern architectural patterns and frameworks for building scalable, maintainable, and event-driven applications. It serves as a valuable reference for developers seeking to explore these technologies and apply them to real-world projects.
+
+### Commands 
+
+![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/70f29afe-c846-48be-b99e-f5898457c550)
+
+* Create Account
+
+![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/3dc5cad9-37a6-4d4e-b376-61fe2af8a4cc)
+
+* Credit an account
+  
+![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/4dbdc0b3-5223-4859-ae52-2fc9fd0fe5a3)
+
+* Debit an account
+
+![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/0d7c24bb-f047-4e3b-bda3-7ee2da691540)
+
+* EventStore Data Base
+
+![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/73d4a8a6-ce4c-4df3-8972-8d790511741f)
+
+* Account events 
+  
+![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/7cc29007-0991-4064-9af6-f51511741550)
+
+
+### Events 
+
+
+
+
+
+
+
+

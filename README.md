@@ -132,7 +132,27 @@ Create an application that allows you to manage bank accounts.
 ![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/7cc29007-0991-4064-9af6-f51511741550)
 
 
-### Events 
+### Queries
+
+* Query Data base
+  
+`account`
+
+![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/13aaa680-94c7-4086-81e2-704c6229fa6e)
+
+`operation`
+
+![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/ac797722-ca4b-4012-80cd-de2f4a2b498b)
+
+
+* All accounts
+
+![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/9dceab7e-7c9a-4123-9ee0-0dd04747716a)
+
+* Account By ID
+
+![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/ba8ce62a-513f-48e9-a9a5-1cf66f85bca3)
+
 
 
 

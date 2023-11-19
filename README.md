@@ -109,7 +109,7 @@ Create an application that allows you to manage bank accounts.
 
 ### Command Side
 
-#### commands 
+#### 1- Commands
 
 ![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/70f29afe-c846-48be-b99e-f5898457c550)
 
@@ -125,7 +125,7 @@ Create an application that allows you to manage bank accounts.
 
 ![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/0d7c24bb-f047-4e3b-bda3-7ee2da691540)
 
-#### events 
+#### 2- Events 
 
 ![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/b8f96adf-6b57-4ed1-b64a-dcde42a2d8b3)
 
@@ -142,11 +142,11 @@ Create an application that allows you to manage bank accounts.
 
 * Query Data base
   
-`account`
+`ACCOUNT Table`
 
 ![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/13aaa680-94c7-4086-81e2-704c6229fa6e)
 
-`operation`
+`OPERATION Table`
 
 ![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/ac797722-ca4b-4012-80cd-de2f4a2b498b)
 

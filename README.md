@@ -160,8 +160,30 @@ Create an application that allows you to manage bank accounts.
 ![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/ba8ce62a-513f-48e9-a9a5-1cf66f85bca3)
 
 
+## Axon Server
 
 
+* Add to `application.proprties`
+
+```java
+axon.axonserver.enabled=true
+axon.axonserver.servers=localhost
+```
+* To start Axon Server 
+
+`java -jar axonserver.jar`
+
+![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/966c3a34-3460-4b50-b645-248de5b61b4d)
+
+* To consult Axon Dashboard
+
+`http://localhost:8024/`
+
+![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/0f34757e-8364-434f-958a-c674efc3a216)
+
+* Event Store 
+
+![image](https://github.com/el-moudni-hicham/digital-bancking-cqrs-eventsourcing-axon/assets/85403056/537ad2fd-fda6-4faf-a437-97a6d4222bac)
 
 
 
